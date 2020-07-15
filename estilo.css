@@ -2,20 +2,20 @@
     margin: 0;
     padding: 0;
 }
-body{
+body{ /*declarando cor*/
     background-color: ivory;
 }
-#check{
+#check{ /*configurnado o display do input*/
     display: none;
 
 }
-#icone{
+#icone{ /*configurnado o icone*/
     cursor: pointer;
     padding: 15px;
     position: absolute;
     z-index: 1;
 }
-.barra{
+.barra{ /*configurando a div 'pai'*/
     background-color: #333;
     height: 100%;
     width: 300px;
@@ -45,7 +45,7 @@ nav a{
 .link:hover{
     background-color: teal;
 }
-
+/*A seguir é as configurações da animaão*/
 #check:checked ~ .barra{
     /*AQUI ELE CRIA A ANIMAÇÃO SE ESTIVER CHECADO*/
     transform: translateX(300px);
