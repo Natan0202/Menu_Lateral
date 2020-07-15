@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: ivory;
+}
+#check{
+    display: none;
+
+}
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+.barra{
+    background-color: #333;
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    transition: all 0.2s;
+    left: -300px;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(136, 131, 131) ;
+}
+.link{
+    background-color: rgb(58, 59, 59);
+    padding: 20px;
+    font-size: 12pt;
+    transition: all 0.2s;
+    border-bottom: 2px solid;
+    color: white;
+    opacity: 0;
+    margin-top: 200px;
+}
+.link:hover{
+    background-color: teal;
+}
+
+#check:checked ~ .barra{
+    /*AQUI ELE CRIA A ANIMAÇÃO SE ESTIVER CHECADO*/
+    transform: translateX(300px);
+}
+#check:checked ~ .barra nav a .link{
+    /*AQUI ELE CRIA A ANIMAÇÃO SE ESTIVER CHECADO*/
+    opacity: 1;
+    margin-top: 0px;
+    transition-delay: 0.2s;
+}
